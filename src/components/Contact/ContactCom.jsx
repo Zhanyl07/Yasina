@@ -33,7 +33,7 @@ function ContactCom() {
 
       <div className="contact-info">
         <p><strong>Email:</strong> asanakunovayasina@gmail.com</p>
-        <p><strong>Telegram:</strong> Yasina</p>
+        <p><strong>Telegram:</strong> @assyasina</p>
         <p><strong>Location:</strong> Kyrgyzstan</p>
       </div>
 

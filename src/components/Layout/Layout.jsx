@@ -3,6 +3,7 @@ import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 // import Featute from '../Feature/Featute'
 import { Outlet } from 'react-router-dom'
+
 function Layout() {
   return (
     <div>

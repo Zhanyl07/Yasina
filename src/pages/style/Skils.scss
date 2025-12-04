@@ -1,0 +1,123 @@
+/* Главный фон */
+.skills {
+  padding: 5rem 0;
+  text-align: center;
+  color: #fff;
+}
+
+/* Заголовок секции */
+.section-title {
+  color: black;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+/* Сетка навыков */
+.skills-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* ровно 6 колонок на больших экранах */
+  gap: 15px;
+  margin-left: 0;
+  box-sizing: border-box;
+}
+
+/* Адаптив для разных экранов */
+@media (max-width: 1200px) {
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки на больших планшетах */
+  }
+}
+
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки на планшетах */
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки на маленьких экранах */
+  }
+}
+
+@media (max-width: 400px) {
+  .skills-grid {
+    grid-template-columns: 1fr; /* 1 колонка на телефонах */
+  }
+}
+
+/* Карточки */
+.skill-card {
+  backdrop-filter: blur(6px);
+  width: 90%; /* карточка под ширину колонки */
+  height: 200px;
+  padding: 20px;
+  border-radius: 18px;
+  background: rgb(38, 63, 83);
+  transition: 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  flex-direction: column; /* иконка сверху, текст под ней */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 15px;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+}
+
+/* Иконки */
+.skill-icon {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+/* Название навыка */
+.skill-card h3 {
+  font-size: 1.3rem;
+  color: #ddd;
+  margin: 5px 0;
+}
+
+/* Уровень */
+.level {
+  color: #ddd;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Адаптив карточек */
+@media (max-width: 768px) {
+  .skills {
+    padding: 3rem 0;
+  }
+
+  .skill-card {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .skill-card {
+    height: 160px;
+  }
+
+  .skill-icon {
+    font-size: 3rem;
+  }
+}
+
+/* Убираем горизонтальный скролл */
+body {
+  overflow-x: hidden;
+}

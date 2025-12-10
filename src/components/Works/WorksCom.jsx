@@ -1,8 +1,8 @@
 import React from "react";
 import "./WorksCom.scss";
 import wazuh from '../../assets/image/Wazuh.png';
-import wazuh2 from '../../assets/image/Wazuh2.png';
-import wazuh3 from '../../assets/image/Wazuh3.png';
+import wazuh2 from '../../assets/image/w.png';
+import wazuh3 from '../../assets/image/w2.png';
 
 function WorksCom() {
   return (
@@ -16,9 +16,9 @@ function WorksCom() {
           <img src={wazuh} alt="Project One" />
           <div className="project-content">
             <h2>Green Shop</h2>
-            <p className="project-tags">React • UI Design</p>
+            <p className="project-tags">React • JS • SCSS • HTML</p>
             <p className="project-text">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+              Plant shop with a clean, minimal and user-friendly interface.
             </p>
             <a 
               href="https://green-shop-oeo8.vercel.app/" 
@@ -26,7 +26,7 @@ function WorksCom() {
               rel="noopener noreferrer"
               className="project-button"
             >
-              Смотреть проект
+              View project
             </a>
           </div>
         </div>
@@ -34,18 +34,18 @@ function WorksCom() {
         <div className="project-card">
           <img src={wazuh2} alt="Project Two" />
           <div className="project-content">
-            <h2>Cross Store</h2>
+            <h2>Nike</h2>
             <p className="project-tags">HTML • CSS • JavaScript</p>
             <p className="project-text">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+              Modern sneaker store with an adaptive and smooth UI.
             </p>
             <a 
-              href="https://cross-shop-6ql6.vercel.app/" 
+              href="https://nike-teal-seven.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="project-button"
             >
-              Смотреть проект
+              View project
             </a>
           </div>
         </div>
@@ -53,18 +53,18 @@ function WorksCom() {
         <div className="project-card">
           <img src={wazuh3} alt="Project Three" />
           <div className="project-content">
-            <h2>Project Three</h2>
-            <p className="project-tags">Figma • UX/UI</p>
+            <h2>Exclusive</h2>
+            <p className="project-tags">HTML • CSS • JavaScript</p>
             <p className="project-text">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+              Clothing store with a simple layout and clean design.
             </p>
             <a 
-              href="https://green-shop-oeo8.vercel.app/" 
+              href="https://exclusive-fp75.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="project-button"
             >
-              Смотреть проект
+              View project
             </a>
           </div>
         </div>

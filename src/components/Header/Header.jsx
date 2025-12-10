@@ -7,7 +7,7 @@ function Header() { return ( <header className='header'> <div className="top-hea
 {/* Navigation */}
       <ul className='nav-list'>
         <li><Link className='nav-link' to="/works">Works</Link></li>
-        <li><Link className='nav-link' to="/blog">Blog</Link></li>
+        <li><Link className='nav-link' to="/blog">About</Link></li>
         <li><Link className='nav-link' to="/contact">Contact</Link></li>
       </ul>
 

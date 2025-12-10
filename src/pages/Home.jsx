@@ -13,11 +13,8 @@ function Home() {
                     Hi, I am Yasina, Front-end developer
                   </h2>
       
-                  <p>Focused on building clean, responsive, and reliable user interfaces. 
-                    Values include well-structured code,
-                     attention to detail, and a thoughtful approach to problem-solving.
-                      Skills are continuously improved to stay current with modern front-end technologies and deliver efficient,
-                       professional results.
+                  <p>I build adaptive and reliable user interfaces with a strong focus on clean structure,
+attention to detail, and user-friendly experience.
                   </p>
       
                   <button>Download Resume</button>

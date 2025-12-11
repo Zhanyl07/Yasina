@@ -4,12 +4,13 @@
   flex-direction: column;
   align-items: center;
   padding: 60px 20px;
-}
 
-.works-title {
-  font-size: 48px;
-  margin-bottom: 40px;
-  font-weight: 700;
+  .works-title {
+    font-size: 48px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-align: center;
+  }
 }
 
 .projects {
@@ -17,6 +18,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin: 0 auto; // ← центрирование
 }
 
 .project-card {
@@ -25,60 +27,58 @@
   align-items: flex-start;
   padding-bottom: 30px;
   border-bottom: 1px solid #e0e0e0;
-  
-  img{
+
+  img {
     width: 376px;
     height: 220px;
     object-fit: cover;
+    border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
 
+  .project-content {
+    flex: 1;
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 6px;
+    }
+
+    .project-tags {
+      color: #757575;
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
+
+    .project-text {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .project-button {
+      display: inline-block;
+      padding: 10px 18px;
+      margin-top: 20px;
+      background: #ff6b6b;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+
+      &:hover {
+        background: #ff5252;
+      }
+    }
   }
 }
 
-.project-img {
-  object-fit: cover;
-  border-radius: 12px;
-  background: #ddd;
+/* 📱 Адаптив для планшетов и мобильных */
+@media (max-width: 1024px) {
+  .projects {
+    width: 80%;
+  }
 }
 
-.project-content {
-  flex: 1;
-
-
-  .project-button {
-  display: inline-block;
-  padding: 8px 16px;
-  margin-top: 30px;
-  background: #ff6b6b;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-
-.project-button:hover {
-  background: #ff5252;
-
-}
-}
-
-.project-content h2 {
-  font-size: 28px;
-  margin-bottom: 6px;
-}
-
-.project-tags {
-  color: #757575;
-  margin-bottom: 16px;
-  font-size: 15px;
-}
-
-.project-text {
-  color: #555;
-  line-height: 1.6;
-}
-
-/* 📱 Адаптив */
 @media (max-width: 768px) {
   .projects {
     width: 90%;
@@ -86,11 +86,51 @@
 
   .project-card {
     flex-direction: column;
+    gap: 20px;
+
+    img {
+      width: 100%;
+      height: 200px;
+    }
+
+    .project-content {
+      text-align: center;
+
+      .project-button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .works {
+    padding: 40px 10px;
+
+    .works-title {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
   }
 
-  .project-img {
-    width: 100%;
-    height: 200px;
-    
+  .project-card {
+    img {
+      height: 180px;
+    }
+
+    .project-content {
+      h2 {
+        font-size: 24px;
+      }
+
+      .project-tags {
+        font-size: 14px;
+      }
+
+      .project-text {
+        font-size: 14px;
+      }
+    }
   }
 }
